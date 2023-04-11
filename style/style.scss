@@ -31,6 +31,7 @@ body {
 
   main {
     .new_book_form {
+      display: none;
       form {
         display: flex;
         flex-direction: column;
