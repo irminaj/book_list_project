@@ -21,6 +21,9 @@ body nav .filter_nav ul li {
 body nav .search_nav .search_wrapper {
   margin-bottom: 5px;
 }
+body main .new_book_form {
+  display: none;
+}
 body main .new_book_form form {
   display: flex;
   flex-direction: column;
