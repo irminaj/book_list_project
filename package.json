@@ -1,0 +1,15 @@
+{
+  "name": "book_list_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/irminaj/book_list_project.git",
+  "author": "irminaj <irminaj@github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "dev": "parcel index.html"
+  }
+}
