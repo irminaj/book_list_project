@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(179, 176, 176);
+}
+body nav {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav .filter_nav ul {
+  display: flex;
+  list-style: none;
+}
+body nav .filter_nav ul li {
+  margin-right: 10px;
+}
+body nav .search_nav .search_wrapper {
+  margin-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */
