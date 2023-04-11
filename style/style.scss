@@ -28,4 +28,29 @@ body {
       }
     }
   }
+
+  main {
+    .new_book_form {
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px;
+        border: solid black 2px;
+        margin: 0 auto;
+        margin-top: 20px;
+        input {
+          width: 80%;
+          margin: 0 auto;
+          padding: 8px 5px;
+          margin-bottom: 8px;
+        }
+        button {
+          width: 80%;
+          margin: 0 auto;
+          padding: 8px 5px;
+        }
+      }
+    }
+  }
 }

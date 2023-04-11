@@ -20,4 +20,24 @@ body nav .filter_nav ul li {
 }
 body nav .search_nav .search_wrapper {
   margin-bottom: 5px;
+}
+body main .new_book_form form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  border: solid black 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+body main .new_book_form form input {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 5px;
+  margin-bottom: 8px;
+}
+body main .new_book_form form button {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 5px;
 }/*# sourceMappingURL=style.css.map */
