@@ -5,13 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/index.e86c4a0e.css">
+    <link rel="stylesheet" href="/index.78cc32dd.css">
   </head>
   <body>
-    <h1>Hello</h1>
+    <nav>
+      <div class="filter_nav">
+        <ul>
+          <li>Filtruoti pagal autorių</li>
+          <li>Filtruoti pagal kategoriją</li>
+          <li>Filtruoti pagal kainą</li>
+        </ul>
+      </div>
+      <div class="search_nav">
+        <div class="search_wrapper">
+          <input type="search" placeholder="Search">
+          <button>Ieškoti</button>
+        </div>
+        <button id="add_new_book">Pridėti naują knygą</button>
+      </div>
+    </nav>
 
 
-
+    <main>
+      <section class="new_book_form_section">
+        <form type="submit" id="new_book_form">
+          <button id="close_btn">Close</button>
+          <input type="text" placeholder="Pavadinimas" id="title">
+          <input type="text" placeholder="Autorius" id="author">
+          <input type="text" placeholder="Kategorija" id="category">
+          <input type="number" placeholder="Metai" id="year">
+          <input type="text" placeholder="Kaina" id="price">
+          <input type="url" placeholder="Paveiksliukas" id="image">
+          <button id="add_book_btn">Sukurti</button>
+        </form>
+      </section>
+      <section id="books_container">
+      </section>
+    </main>
     <script defer="" src="/index.ce4d0d14.js"></script>
+    <script defer="" src="/index.ad5a100b.js"></script>
   <script src="/book_list_project.3464ddca.js"></script></body>
 </html>
