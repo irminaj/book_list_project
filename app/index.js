@@ -9,6 +9,7 @@ const bookPrice = document.querySelector("#price");
 const bookImage = document.querySelector("#image");
 const addBookBtn = document.querySelector("#add_book_btn");
 const newBookForm = document.querySelector("#new_book_form");
+const bookList = JSON.parse(localStorage.getItem("book-list"));
 
 addNewBookBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -30,7 +31,40 @@ const addBook = () => {
   addIndex(bookList);
   console.log(book);
   localStorage.setItem("book-list", JSON.stringify(bookList));
-  return bookList;
+};
+
+const addAuthor = () => {
+  let authorList;
+  let author = bookAuthor.value;
+  if (!localStorage["author-list"]) {
+    authorList = [];
+    authorList.push(author);
+  } else {
+    authorList = JSON.parse(localStorage["author-list"]);
+    authorList.map((item) => {
+      if (item !== author) {
+        authorList.push(author);
+      }
+    });
+  }
+  localStorage.setItem("author-list", JSON.stringify(authorList));
+};
+
+const addCategory = () => {
+  let categoryList;
+  let category = bookCategory.value;
+  if (!localStorage["category-list"]) {
+    categoryList = [];
+    categoryList.push(category);
+  } else {
+    categoryList = JSON.parse(localStorage["category-list"]);
+    categoryList.map((item) => {
+      if (item !== category) {
+        categoryList.push(category);
+      }
+    });
+  }
+  localStorage.setItem("category-list", JSON.stringify(categoryList));
 };
 
 const addIndex = (itemsArray) => {
@@ -43,4 +77,8 @@ const addIndex = (itemsArray) => {
 newBookForm.addEventListener("submit", (e) => {
   e.preventDefault();
   addBook();
+  addAuthor();
+  addCategory();
+  bookFormSection.style = "display:none";
+  location.reload();
 });
