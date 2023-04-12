@@ -26,11 +26,11 @@ body nav .search_nav .search_wrapper {
   margin-bottom: 5px;
 }
 
-body main .new_book_form {
+body main .new_book_form_section {
   display: none;
 }
 
-body main .new_book_form form {
+body main .new_book_form_section form {
   width: 400px;
   border: 2px solid #000;
   flex-direction: column;
@@ -39,13 +39,13 @@ body main .new_book_form form {
   display: flex;
 }
 
-body main .new_book_form form input {
+body main .new_book_form_section form input {
   width: 80%;
   margin: 0 auto 8px;
   padding: 8px 5px;
 }
 
-body main .new_book_form form button {
+body main .new_book_form_section form button {
   width: 80%;
   margin: 0 auto;
   padding: 8px 5px;
