@@ -13,13 +13,31 @@ body nav {
   display: flex;
 }
 
-body nav .filter_nav ul {
-  list-style: none;
+body nav .filter_nav {
   display: flex;
 }
 
-body nav .filter_nav ul li {
+body nav .filter_nav .dropdown {
   margin-right: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+body nav .filter_nav .dropdown .dropdown-content {
+  z-index: 1;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+}
+
+body nav .filter_nav .dropdown .dropdown-content a {
+  color: block;
+  text-decoration: none;
+  display: block;
+}
+
+body nav .filter_nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 body nav .search_nav .search_wrapper {

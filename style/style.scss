@@ -12,12 +12,27 @@ body {
     align-items: center;
 
     .filter_nav {
-      ul {
-        display: flex;
-        list-style: none;
+      display: flex;
 
-        li {
-          margin-right: 10px;
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          background-color: white;
+          & a {
+            color: block;
+            text-decoration: none;
+            display: block;
+          }
+        }
+
+        &:hover .dropdown-content {
+          display: block;
         }
       }
     }
