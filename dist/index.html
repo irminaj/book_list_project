@@ -5,13 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/index.e86c4a0e.css">
+    <link rel="stylesheet" href="/index.78cc32dd.css">
   </head>
   <body>
-    <h1>Hello</h1>
+    <nav>
+      <div class="filter_nav">
+        <ul>
+          <li>Filtruoti pagal autorių</li>
+          <li>Filtruoti pagal kategoriją</li>
+          <li>Filtruoti pagal kainą</li>
+        </ul>
+      </div>
+      <div class="search_nav">
+        <div class="search_wrapper">
+          <input type="search" placeholder="Search">
+          <button>Ieškoti</button>
+        </div>
+        <button id="add_new_book">Pridėti naują knygą</button>
+      </div>
+    </nav>
 
 
-
+    <main>
+      <section class="new_book_form">
+        <form action="submit">
+          <button id="close_btn">Close</button>
+          <input type="text" placeholder="Pavadinimas">
+          <input type="text" placeholder="Autorius">
+          <input type="text" placeholder="Kategorija">
+          <input type="number" placeholder="Metai">
+          <input type="number" placeholder="Kaina">
+          <input type="url" placeholder="Paveiksliukas">
+          <button>Sukurti</button>
+        </form>
+      </section>
+      <section></section>
+    </main>
     <script defer="" src="/index.ce4d0d14.js"></script>
   <script src="/book_list_project.3464ddca.js"></script></body>
 </html>

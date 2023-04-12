@@ -1,0 +1,54 @@
+body {
+  box-sizing: border-box;
+  background-color: #b3b0b0;
+  margin: 0;
+  padding: 0;
+}
+
+body nav {
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+body nav .filter_nav ul {
+  list-style: none;
+  display: flex;
+}
+
+body nav .filter_nav ul li {
+  margin-right: 10px;
+}
+
+body nav .search_nav .search_wrapper {
+  margin-bottom: 5px;
+}
+
+body main .new_book_form {
+  display: none;
+}
+
+body main .new_book_form form {
+  width: 400px;
+  border: 2px solid #000;
+  flex-direction: column;
+  margin: 20px auto 0;
+  padding: 20px;
+  display: flex;
+}
+
+body main .new_book_form form input {
+  width: 80%;
+  margin: 0 auto 8px;
+  padding: 8px 5px;
+}
+
+body main .new_book_form form button {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 5px;
+}
+
+/*# sourceMappingURL=index.78cc32dd.css.map */
