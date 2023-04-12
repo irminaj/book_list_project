@@ -1,8 +1,7 @@
 const bookList = JSON.parse(localStorage.getItem("book-list"));
 const booksContainer = document.querySelector("#books_container");
-
-const bookTemplate = (book) => {
-  return `
+const bookTemplate = (book)=>{
+    return `
   <div id=${book.id}>
     <img src=${book.image}>
     <ul>
@@ -16,11 +15,12 @@ const bookTemplate = (book) => {
     <button onclick="deleteBook(${book.id})">Delete</button>
   </div>`;
 };
-
-window.onload = (e) => {
-  e.preventDefault();
-  bookList.forEach((book) => {
-    booksContainer.innerHTML += bookTemplate(book);
-    console.log(book);
-  });
+window.onload = (e)=>{
+    e.preventDefault();
+    bookList.forEach((book)=>{
+        booksContainer.innerHTML += bookTemplate(book);
+        console.log(book);
+    });
 };
+
+//# sourceMappingURL=index.ad5a100b.js.map
