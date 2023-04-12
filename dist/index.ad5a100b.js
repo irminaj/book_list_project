@@ -1,4 +1,3 @@
-const bookList = JSON.parse(localStorage.getItem("book-list"));
 const booksContainer = document.querySelector("#books_container");
 const bookTemplate = (book)=>{
     return `
@@ -21,6 +20,8 @@ window.onload = (e)=>{
         booksContainer.innerHTML += bookTemplate(book);
         console.log(book);
     });
+    showAuthorList();
+    showCategoriesList();
 };
 
 //# sourceMappingURL=index.ad5a100b.js.map
