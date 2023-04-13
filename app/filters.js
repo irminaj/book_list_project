@@ -2,6 +2,8 @@ const authorList = document.querySelector("#authors_list");
 const categoriesList = document.querySelector("#categories_list");
 const authorListArray = JSON.parse(localStorage.getItem("author-list"));
 const categoriesListArray = JSON.parse(localStorage.getItem("category-list"));
+const highestToLowestPrice = document.querySelector("#highest_to_lowest_price");
+const lowestTHighestPrice = document.querySelector("#lowest_to_highest_price");
 
 const authorListTemplate = (author) => {
   return (
@@ -52,3 +54,37 @@ const filterCategory = (bookCategory) => {
     }
   });
 };
+
+const highestToLowest = () => {
+  bookList.sort((a, b) => {
+    return b.price - a.price;
+  });
+  booksContainer.innerHTML = "";
+  bookList.forEach((book) => {
+    console.log(book);
+    booksContainer.innerHTML += bookTemplate(book);
+  });
+};
+
+highestToLowestPrice.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("Hello");
+  highestToLowest();
+});
+
+const lowestToHighest = () => {
+  bookList.sort((a, b) => {
+    return a.price - b.price;
+  });
+  booksContainer.innerHTML = "";
+  bookList.forEach((book) => {
+    console.log(book);
+    booksContainer.innerHTML += bookTemplate(book);
+  });
+};
+
+lowestTHighestPrice.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("Hello");
+  lowestToHighest();
+});
