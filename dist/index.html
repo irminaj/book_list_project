@@ -23,9 +23,8 @@
         <div class="dropdown">
           <p>Filtruoti pagal kainą</p>
             <div class="dropdown-content" id="price_list">
-              <a href="">Author 1</a>
-              <a href="">Author 2</a>
-              <a href="">Author 3</a>
+              <a id="highest_to_lowest_price">Nuo didžiausios iki mažiausios</a>
+              <a id="lowest_to_highest_price">Nuo mažiausios iki didžiausios</a>
             </div>
         </div>
       </div>
@@ -47,7 +46,7 @@
           <input type="text" placeholder="Autorius" id="author">
           <input type="text" placeholder="Kategorija" id="category">
           <input type="number" placeholder="Metai" id="year">
-          <input type="text" placeholder="Kaina" id="price">
+          <input type="number" step="0.01" placeholder="Kaina" id="price">
           <input type="url" placeholder="Paveiksliukas" id="image">
           <button id="add_book_btn">Sukurti</button>
         </form>
