@@ -16,7 +16,8 @@ const editBook = (bookId) => {
 editBookBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const index = +editBookBtn.getAttribute("id");
-  console.log(typeof index);
+  const changedAuthor = bookList[index].author;
+  const changedCategory = bookList[index].category;
   const editedBook = {
     title: bookTitlte.value,
     author: bookAuthor.value,
@@ -29,5 +30,9 @@ editBookBtn.addEventListener("click", (e) => {
   console.log(editedBook);
   bookList.splice(index, 1, editedBook);
   localStorage.setItem("book-list", JSON.stringify(bookList));
+  lookForDeletedAuthor(changedAuthor);
+  lookForDeletedCategory(changedCategory);
+  addAuthor();
+  addCategory();
   location.reload();
 });
