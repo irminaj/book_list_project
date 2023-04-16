@@ -69,4 +69,8 @@ body main .new_book_form_section form button {
   padding: 8px 5px;
 }
 
+body main .new_book_form_section form #edit_book_btn {
+  display: none;
+}
+
 /*# sourceMappingURL=index.78cc32dd.css.map */

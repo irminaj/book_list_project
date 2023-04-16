@@ -19,6 +19,7 @@ addNewBookBtn.addEventListener("click", (e) => {
 closFormBtn.addEventListener("click", (e) => {
   e.preventDefault();
   bookFormSection.style = "display: none";
+  location.reload();
 });
 
 const addBook = () => {

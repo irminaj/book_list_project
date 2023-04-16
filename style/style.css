@@ -58,4 +58,7 @@ body main .new_book_form_section form button {
   width: 80%;
   margin: 0 auto;
   padding: 8px 5px;
+}
+body main .new_book_form_section form #edit_book_btn {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
