@@ -41,11 +41,9 @@ const addAuthor = () => {
     authorList.push(author);
   } else {
     authorList = JSON.parse(localStorage["author-list"]);
-    authorList.map((item) => {
-      if (item !== author) {
-        authorList.push(author);
-      }
-    });
+    if (!authorList.includes(author)) {
+      authorList.push(author);
+    }
   }
   localStorage.setItem("author-list", JSON.stringify(authorList));
 };
@@ -58,11 +56,9 @@ const addCategory = () => {
     categoryList.push(category);
   } else {
     categoryList = JSON.parse(localStorage["category-list"]);
-    categoryList.map((item) => {
-      if (item !== category) {
-        categoryList.push(category);
-      }
-    });
+    if (!categoryList.includes(category)) {
+      categoryList.push(category);
+    }
   }
   localStorage.setItem("category-list", JSON.stringify(categoryList));
 };
