@@ -3,10 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: rgb(179, 176, 176);
+  font-family: "Open Sans", sans-serif;
 }
 body nav {
   padding: 20px;
-  background-color: white;
+  background-color: rgb(252, 250, 250);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,22 +20,77 @@ body nav .filter_nav .dropdown {
   display: inline-block;
   margin-right: 10px;
 }
+body nav .filter_nav .dropdown:hover p {
+  color: rgb(96, 108, 235);
+}
 body nav .filter_nav .dropdown .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
   background-color: white;
+  width: 180px;
 }
 body nav .filter_nav .dropdown .dropdown-content a {
   color: block;
   text-decoration: none;
   display: block;
+  padding: 10px;
+  border-bottom: 0.5px solid rgb(173, 172, 172);
+}
+body nav .filter_nav .dropdown .dropdown-content a:hover {
+  background-color: rgb(96, 108, 235);
 }
 body nav .filter_nav .dropdown:hover .dropdown-content {
   display: block;
 }
 body nav .search_nav .search_wrapper {
   margin-bottom: 5px;
+}
+body nav .search_nav .search_wrapper #search_input {
+  border: none;
+  border-bottom: 1px solid rgb(173, 172, 172);
+  padding: 10px;
+  background-color: rgb(252, 250, 250);
+  color: black;
+}
+body nav .search_nav .search_wrapper #search_input:focus {
+  border: none;
+}
+body nav .search_nav .search_wrapper button {
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid rgb(173, 172, 172);
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+body nav .search_nav .search_wrapper button:hover {
+  background-color: rgb(96, 108, 235);
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/2908984/pexels-photo-2908984.jpeg");
+  color: white;
+  background-position: center;
+  height: 400px;
+}
+body header div {
+  text-align: center;
+}
+body header div h1 {
+  padding-bottom: 20px;
+}
+body header div button {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+body header div button:hover {
+  background-color: rgb(96, 108, 235);
 }
 body main .new_book_form_section {
   display: none;
@@ -61,4 +117,18 @@ body main .new_book_form_section form button {
 }
 body main .new_book_form_section form #edit_book_btn {
   display: none;
+}
+body main #books_container {
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main #books_container div {
+  max-width: 350px;
+  padding-right: 20px;
+}
+body main #books_container div img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
