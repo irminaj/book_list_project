@@ -3,10 +3,15 @@ const searchBtn = document.querySelector("#search_btn");
 
 const searchForBook = () => {
   const searchValue = searchInput.value;
-  console.log(searchValue);
   booksContainer.innerHTML = "";
   bookList.forEach((book) => {
-    if (book.author.includes(searchValue) || book.title.includes(searchValue) || book.category.includes(searchValue)) {
+    if (
+      book.author.includes(searchValue) ||
+      book.title.includes(searchValue) ||
+      book.category.includes(searchValue) ||
+      book.year.includes(searchValue) ||
+      book.price.includes(searchValue)
+    ) {
       booksContainer.innerHTML += bookTemplate(book);
     }
   });
