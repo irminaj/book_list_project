@@ -5,14 +5,16 @@ const bookTemplate = (book) => {
   <div id=${book.id}>
     <img src=${book.image}>
     <ul>
-      <li>${book.title}</li>
+      <li class="title">${book.title}</li>
       <li>${book.author}</li>
       <li>${book.category}</li>
       <li>${book.year}</li>
       <li>${book.price}</li>
     </ul>
-    <button onclick="editBook(${book.id})">Edit</button>
-    <button onclick="deleteBook(${book.id})">Delete</button>
+    <div class="buttons">
+      <button onclick="editBook(${book.id})">Edit</button>
+      <button onclick="deleteBook(${book.id})">Delete</button>
+    </div>
   </div>`;
 };
 

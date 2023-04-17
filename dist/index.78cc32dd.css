@@ -150,11 +150,53 @@ body main #books_container {
 
 body main #books_container div {
   max-width: 350px;
-  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 body main #books_container div img {
   width: 100%;
+  height: 300px;
+}
+
+body main #books_container div ul {
+  -webkit-padding-start: 0px;
+  width: 80%;
+  margin: 0 auto 5px;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+body main #books_container div ul .title {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body main #books_container div ul li {
+  text-align: center;
+}
+
+body main #books_container div .buttons {
+  justify-content: center;
+  gap: 5px;
+  margin-right: 0;
+  display: flex;
+}
+
+body main #books_container div .buttons button {
+  width: 100px;
+  background-color: #fff;
+  border: none;
+  padding: 5px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 500;
+}
+
+body main #books_container div .buttons button:hover {
+  background-color: #606ceb;
 }
 
 /*# sourceMappingURL=index.78cc32dd.css.map */
