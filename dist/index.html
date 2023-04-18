@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="/index.78cc32dd.css">
   </head>
   <body>
     <nav>
-      <div class="filter_nav">
+      <img src="/menu.36d4bcae.png" alt="" id="toggle_btn">
+      <div class="menu_wrapper">
+        <div class="filter_nav">
           <div class="dropdown">
-          <p>Filtruoti pagal autorių</p>
-            <div class="dropdown-content" id="authors_list">
-            </div>
-        </div>
-        <div class="dropdown">
-          <p>Filtruoti pagal kategoriją</p>
-            <div class="dropdown-content" id="categories_list">
-            </div>
-        </div>
-        <div class="dropdown">
-          <p>Filtruoti pagal kainą</p>
+            <p>Filtruoti pagal autorių</p>
+            <div class="dropdown-content" id="authors_list"></div>
+          </div>
+          <div class="dropdown">
+            <p>Filtruoti pagal kategoriją</p>
+            <div class="dropdown-content" id="categories_list"></div>
+          </div>
+          <div class="dropdown">
+            <p>Filtruoti pagal kainą</p>
             <div class="dropdown-content" id="price_list">
               <a id="highest_to_lowest_price">Nuo didžiausios iki mažiausios</a>
               <a id="lowest_to_highest_price">Nuo mažiausios iki didžiausios</a>
             </div>
+          </div>
         </div>
-      </div>
-      <div class="search_nav">
-        <div class="search_wrapper">
-          <input type="search" placeholder="Ieškoti" id="search_input">
-          <button id="search_btn">Ieškoti</button>
+        <div class="search_nav">
+          <div class="search_wrapper">
+            <input type="search" placeholder="Ieškoti" id="search_input">
+            <button id="search_btn">Ieškoti</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -44,9 +45,8 @@
         <h1>Knygų sąrašas</h1>
         <button id="add_new_book">Pridėti naują knygą</button>
         <button id="show_all_books">Rodyti visas knygas</button>
-     </div>
+      </div>
     </header>
-
 
     <main>
       <section class="new_book_form_section">
@@ -61,11 +61,10 @@
             <button id="add_book_btn">Sukurti</button>
             <button id="edit_book_btn">Redaguoti</button>
             <button id="close_btn">Close</button>
-        </div>
+          </div>
         </form>
       </section>
-      <section id="books_container">
-      </section>
+      <section id="books_container"></section>
     </main>
     <script defer="" src="/index.ce4d0d14.js"></script>
     <script defer="" src="/index.ad5a100b.js"></script>
@@ -73,5 +72,6 @@
     <script defer="" src="/index.ed360a67.js"></script>
     <script defer="" src="/index.aa7e42aa.js"></script>
     <script defer="" src="/index.1db6b65d.js"></script>
+    <script defer="" src="/index.84012184.js"></script>
   <script src="/book_list_project.3464ddca.js"></script></body>
 </html>
