@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(179, 176, 176);
+  background-color: rgb(255, 255, 255);
   font-family: "Open Sans", sans-serif;
 }
 body nav {
@@ -103,17 +103,35 @@ body main .new_book_form_section form {
   border: solid black 2px;
   margin: 0 auto;
   margin-top: 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
 }
 body main .new_book_form_section form input {
   width: 80%;
   margin: 0 auto;
   padding: 8px 5px;
   margin-bottom: 8px;
+  border: 0.5px solid rgb(192, 192, 192);
+  font-family: "Open Sans", sans-serif;
 }
-body main .new_book_form_section form button {
-  width: 80%;
-  margin: 0 auto;
-  padding: 8px 5px;
+body main .new_book_form_section form .form_btn_wrapper {
+  display: flex;
+  justify-content: center;
+}
+body main .new_book_form_section form .form_btn_wrapper button {
+  width: 30%;
+  margin-right: 5px;
+  background-color: rgb(96, 108, 235);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+body main .new_book_form_section form .form_btn_wrapper button:hover {
+  background-color: white;
+  color: rgb(96, 108, 235);
+  border: 1px solid rgb(96, 108, 235);
 }
 body main .new_book_form_section form #edit_book_btn {
   display: none;
@@ -160,11 +178,14 @@ body main #books_container div .buttons {
 body main #books_container div .buttons button {
   width: 100px;
   padding: 5px;
-  background-color: white;
+  background-color: rgb(96, 108, 235);
+  color: white;
   border: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
 body main #books_container div .buttons button:hover {
-  background-color: rgb(96, 108, 235);
+  background-color: white;
+  color: rgb(96, 108, 235);
+  border: 1px solid rgb(96, 108, 235);
 }/*# sourceMappingURL=style.css.map */

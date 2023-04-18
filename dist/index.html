@@ -51,15 +51,17 @@
     <main>
       <section class="new_book_form_section">
         <form type="submit" id="new_book_form">
-          <button id="close_btn">Close</button>
           <input type="text" placeholder="Pavadinimas" id="title">
           <input type="text" placeholder="Autorius" id="author">
           <input type="text" placeholder="Kategorija" id="category">
           <input type="number" placeholder="Metai" id="year">
           <input type="number" step="0.01" placeholder="Kaina" id="price">
           <input type="url" placeholder="Paveiksliukas" id="image">
-          <button id="add_book_btn">Sukurti</button>
-          <button id="edit_book_btn">Redaguoti</button>
+          <div class="form_btn_wrapper">
+            <button id="add_book_btn">Sukurti</button>
+            <button id="edit_book_btn">Redaguoti</button>
+            <button id="close_btn">Close</button>
+        </div>
         </form>
       </section>
       <section id="books_container">

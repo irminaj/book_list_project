@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  background-color: #b3b0b0;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   font-family: Open Sans, sans-serif;
@@ -117,7 +117,8 @@ body main .new_book_form_section {
 
 body main .new_book_form_section form {
   width: 400px;
-  border: 2px solid #000;
+  background-color: #fff;
+  border: none;
   flex-direction: column;
   margin: 20px auto 0;
   padding: 20px;
@@ -126,14 +127,32 @@ body main .new_book_form_section form {
 
 body main .new_book_form_section form input {
   width: 80%;
+  border: .5px solid silver;
   margin: 0 auto 8px;
   padding: 8px 5px;
+  font-family: Open Sans, sans-serif;
 }
 
-body main .new_book_form_section form button {
-  width: 80%;
-  margin: 0 auto;
-  padding: 8px 5px;
+body main .new_book_form_section form .form_btn_wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+body main .new_book_form_section form .form_btn_wrapper button {
+  width: 30%;
+  color: #fff;
+  background-color: #606ceb;
+  border: none;
+  margin-right: 5px;
+  padding: 10px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 500;
+}
+
+body main .new_book_form_section form .form_btn_wrapper button:hover {
+  color: #606ceb;
+  background-color: #fff;
+  border: 1px solid #606ceb;
 }
 
 body main .new_book_form_section form #edit_book_btn {
@@ -188,7 +207,8 @@ body main #books_container div .buttons {
 
 body main #books_container div .buttons button {
   width: 100px;
-  background-color: #fff;
+  color: #fff;
+  background-color: #606ceb;
   border: none;
   padding: 5px;
   font-family: Open Sans, sans-serif;
@@ -196,7 +216,9 @@ body main #books_container div .buttons button {
 }
 
 body main #books_container div .buttons button:hover {
-  background-color: #606ceb;
+  color: #606ceb;
+  background-color: #fff;
+  border: 1px solid #606ceb;
 }
 
 /*# sourceMappingURL=index.78cc32dd.css.map */
