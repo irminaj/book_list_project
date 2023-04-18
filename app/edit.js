@@ -27,7 +27,6 @@ editBookBtn.addEventListener("click", (e) => {
     image: bookImage.value,
     id: index,
   };
-  console.log(editedBook);
   bookList.splice(index, 1, editedBook);
   localStorage.setItem("book-list", JSON.stringify(bookList));
   lookForDeletedAuthor(changedAuthor);
