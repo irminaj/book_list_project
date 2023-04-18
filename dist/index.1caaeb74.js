@@ -10,7 +10,6 @@ const authorListTemplate = (author)=>{
 };
 const showAuthorList = ()=>{
     authorListArray.forEach((author)=>{
-        console.log(author);
         authorList.innerHTML += authorListTemplate(author);
     });
 };
@@ -20,7 +19,6 @@ const categoryListTemplate = (category)=>{
 };
 const showCategoriesList = ()=>{
     categoriesListArray.forEach((category)=>{
-        console.log(category);
         categoriesList.innerHTML += categoryListTemplate(category);
     });
 };
@@ -42,13 +40,11 @@ const highestToLowest = ()=>{
     });
     booksContainer.innerHTML = "";
     bookList.forEach((book)=>{
-        console.log(book);
         booksContainer.innerHTML += bookTemplate(book);
     });
 };
 highestToLowestPrice.addEventListener("click", (e)=>{
     e.preventDefault();
-    console.log("Hello");
     highestToLowest();
 });
 const lowestToHighest = ()=>{
@@ -57,13 +53,11 @@ const lowestToHighest = ()=>{
     });
     booksContainer.innerHTML = "";
     bookList.forEach((book)=>{
-        console.log(book);
         booksContainer.innerHTML += bookTemplate(book);
     });
 };
 lowestTHighestPrice.addEventListener("click", (e)=>{
     e.preventDefault();
-    console.log("Hello");
     lowestToHighest();
 });
 

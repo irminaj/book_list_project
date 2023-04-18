@@ -1,4 +1,5 @@
 const booksContainer = document.querySelector("#books_container");
+const showAllBooksBtn = document.querySelector("#show_all_books");
 const bookTemplate = (book)=>{
     return `
   <div id=${book.id}>
@@ -20,10 +21,15 @@ window.onload = (e)=>{
     e.preventDefault();
     bookList.forEach((book)=>{
         booksContainer.innerHTML += bookTemplate(book);
-        console.log(book);
     });
     showAuthorList();
     showCategoriesList();
 };
+showAllBooksBtn.addEventListener("click", ()=>{
+    booksContainer.innerHTML = "";
+    bookList.forEach((book)=>{
+        booksContainer.innerHTML += bookTemplate(book);
+    });
+});
 
 //# sourceMappingURL=index.ad5a100b.js.map
