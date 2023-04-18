@@ -8,55 +8,60 @@ body {
 body nav {
   padding: 20px;
   background-color: rgb(252, 250, 250);
+}
+body nav #toggle_btn {
+  display: none;
+}
+body nav .menu_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body nav .filter_nav {
+body nav .menu_wrapper .filter_nav {
   display: flex;
 }
-body nav .filter_nav .dropdown {
+body nav .menu_wrapper .filter_nav .dropdown {
   position: relative;
   display: inline-block;
   margin-right: 10px;
 }
-body nav .filter_nav .dropdown:hover p {
+body nav .menu_wrapper .filter_nav .dropdown:hover p {
   color: rgb(96, 108, 235);
 }
-body nav .filter_nav .dropdown .dropdown-content {
+body nav .menu_wrapper .filter_nav .dropdown .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
   background-color: white;
   width: 180px;
 }
-body nav .filter_nav .dropdown .dropdown-content a {
+body nav .menu_wrapper .filter_nav .dropdown .dropdown-content a {
   color: block;
   text-decoration: none;
   display: block;
   padding: 10px;
   border-bottom: 0.5px solid rgb(173, 172, 172);
 }
-body nav .filter_nav .dropdown .dropdown-content a:hover {
+body nav .menu_wrapper .filter_nav .dropdown .dropdown-content a:hover {
   background-color: rgb(96, 108, 235);
 }
-body nav .filter_nav .dropdown:hover .dropdown-content {
+body nav .menu_wrapper .filter_nav .dropdown:hover .dropdown-content {
   display: block;
 }
-body nav .search_nav .search_wrapper {
+body nav .menu_wrapper .search_nav .search_wrapper {
   margin-bottom: 5px;
 }
-body nav .search_nav .search_wrapper #search_input {
+body nav .menu_wrapper .search_nav .search_wrapper #search_input {
   border: none;
   border-bottom: 1px solid rgb(173, 172, 172);
   padding: 10px;
   background-color: rgb(252, 250, 250);
   color: black;
 }
-body nav .search_nav .search_wrapper #search_input:focus {
+body nav .menu_wrapper .search_nav .search_wrapper #search_input:focus {
   border: none;
 }
-body nav .search_nav .search_wrapper button {
+body nav .menu_wrapper .search_nav .search_wrapper button {
   background-color: white;
   border: none;
   border-bottom: 1px solid rgb(173, 172, 172);
@@ -64,7 +69,7 @@ body nav .search_nav .search_wrapper button {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
-body nav .search_nav .search_wrapper button:hover {
+body nav .menu_wrapper .search_nav .search_wrapper button:hover {
   background-color: rgb(96, 108, 235);
 }
 body header {
@@ -188,4 +193,45 @@ body main #books_container div .buttons button:hover {
   background-color: white;
   color: rgb(96, 108, 235);
   border: 1px solid rgb(96, 108, 235);
+}
+
+@media only screen and (max-width: 768px) {
+  body nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  body nav .menu_wrapper {
+    width: 100%;
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  body nav .menu_wrapper .filter_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body nav .menu_wrapper .filter_nav .dropdown p {
+    text-align: center;
+  }
+  body nav .menu_wrapper .filter_nav .dropdown:hover {
+    background-color: rgb(96, 108, 235);
+  }
+  body nav .menu_wrapper .filter_nav .dropdown:hover p {
+    color: white;
+  }
+  body nav .menu_wrapper .search_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  body nav .active {
+    display: flex;
+  }
+  body nav #toggle_btn {
+    display: block;
+    width: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

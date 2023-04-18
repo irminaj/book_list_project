@@ -8,27 +8,34 @@ body {
 
 body nav {
   background-color: #fcfafa;
+  padding: 20px;
+}
+
+body nav #toggle_btn {
+  display: none;
+}
+
+body nav .menu_wrapper {
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   display: flex;
 }
 
-body nav .filter_nav {
+body nav .menu_wrapper .filter_nav {
   display: flex;
 }
 
-body nav .filter_nav .dropdown {
+body nav .menu_wrapper .filter_nav .dropdown {
   margin-right: 10px;
   display: inline-block;
   position: relative;
 }
 
-body nav .filter_nav .dropdown:hover p {
+body nav .menu_wrapper .filter_nav .dropdown:hover p {
   color: #606ceb;
 }
 
-body nav .filter_nav .dropdown .dropdown-content {
+body nav .menu_wrapper .filter_nav .dropdown .dropdown-content {
   z-index: 1;
   width: 180px;
   background-color: #fff;
@@ -36,7 +43,7 @@ body nav .filter_nav .dropdown .dropdown-content {
   position: absolute;
 }
 
-body nav .filter_nav .dropdown .dropdown-content a {
+body nav .menu_wrapper .filter_nav .dropdown .dropdown-content a {
   color: block;
   border-bottom: .5px solid #adacac;
   padding: 10px;
@@ -44,19 +51,19 @@ body nav .filter_nav .dropdown .dropdown-content a {
   display: block;
 }
 
-body nav .filter_nav .dropdown .dropdown-content a:hover {
+body nav .menu_wrapper .filter_nav .dropdown .dropdown-content a:hover {
   background-color: #606ceb;
 }
 
-body nav .filter_nav .dropdown:hover .dropdown-content {
+body nav .menu_wrapper .filter_nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
-body nav .search_nav .search_wrapper {
+body nav .menu_wrapper .search_nav .search_wrapper {
   margin-bottom: 5px;
 }
 
-body nav .search_nav .search_wrapper #search_input {
+body nav .menu_wrapper .search_nav .search_wrapper #search_input {
   color: #000;
   background-color: #fcfafa;
   border: none;
@@ -64,11 +71,11 @@ body nav .search_nav .search_wrapper #search_input {
   padding: 10px;
 }
 
-body nav .search_nav .search_wrapper #search_input:focus {
+body nav .menu_wrapper .search_nav .search_wrapper #search_input:focus {
   border: none;
 }
 
-body nav .search_nav .search_wrapper button {
+body nav .menu_wrapper .search_nav .search_wrapper button {
   background-color: #fff;
   border: none;
   border-bottom: 1px solid #adacac;
@@ -77,7 +84,7 @@ body nav .search_nav .search_wrapper button {
   font-weight: 500;
 }
 
-body nav .search_nav .search_wrapper button:hover {
+body nav .menu_wrapper .search_nav .search_wrapper button:hover {
   background-color: #606ceb;
 }
 
@@ -219,6 +226,55 @@ body main #books_container div .buttons button:hover {
   color: #606ceb;
   background-color: #fff;
   border: 1px solid #606ceb;
+}
+
+@media only screen and (max-width: 768px) {
+  body nav {
+    flex-direction: column;
+    align-items: end;
+    display: flex;
+  }
+
+  body nav .menu_wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  body nav .menu_wrapper .filter_nav {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  body nav .menu_wrapper .filter_nav .dropdown p {
+    text-align: center;
+  }
+
+  body nav .menu_wrapper .filter_nav .dropdown:hover {
+    background-color: #606ceb;
+  }
+
+  body nav .menu_wrapper .filter_nav .dropdown:hover p {
+    color: #fff;
+  }
+
+  body nav .menu_wrapper .search_nav {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  body nav .active {
+    display: flex;
+  }
+
+  body nav #toggle_btn {
+    width: 50px;
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.78cc32dd.css.map */
