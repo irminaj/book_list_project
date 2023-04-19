@@ -169,6 +169,7 @@ body {
     #books_container {
       margin: 20px auto;
       width: 80%;
+      max-width: 900px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
