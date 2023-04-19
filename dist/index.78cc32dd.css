@@ -44,7 +44,6 @@ body nav .menu_wrapper .filter_nav .dropdown .dropdown-content {
 }
 
 body nav .menu_wrapper .filter_nav .dropdown .dropdown-content a {
-  color: block;
   border-bottom: .5px solid #adacac;
   padding: 10px;
   text-decoration: none;
