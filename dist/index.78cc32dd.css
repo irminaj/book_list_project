@@ -168,6 +168,7 @@ body main .new_book_form_section form #edit_book_btn {
 
 body main #books_container {
   width: 80%;
+  max-width: 900px;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px auto;
