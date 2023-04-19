@@ -9,11 +9,11 @@ const bookTemplate = (book)=>{
       <li>${book.author}</li>
       <li>${book.category}</li>
       <li>${book.year}</li>
-      <li>${book.price}</li>
+      <li>${book.price}$</li>
     </ul>
     <div class="buttons">
-      <button onclick="editBook(${book.id})">Edit</button>
-      <button onclick="deleteBook(${book.id})">Delete</button>
+      <button onclick="editBook(${book.id})">Redaguoti</button>
+      <button onclick="deleteBook(${book.id})">Ištrinti</button>
     </div>
   </div>`;
 };
